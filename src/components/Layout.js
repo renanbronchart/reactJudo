@@ -1,17 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React from "react";
+import { Link } from "react-router";
 
 export default class Layout extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="app-container">
         <header>
-          <Link to='/'>
-            <img className='logo' src='/img/logo-judo-hereos.png' />
+          <Link to="/">
+            <img className="logo" src="/img/logo-judo-heroes.png"/>
           </Link>
         </header>
         <div className="app-content">{this.props.children}</div>
@@ -21,6 +17,6 @@ export default class Layout extends React.Component {
           </p>
         </footer>
       </div>
-    )
+    );
   }
 }
